@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Strona o placach zabaw</title>
+    <meta
+      name="description"
+      content='Sprzedajmy place zabaw już od 1200 lat " Mieszko I" bawił się na naszym sprzęcie'
+    />
+    <meta name="author" content="inż. Tomasz Żukowski" />
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <main>
+      <a href="index.html"
+        ><img id="logoGlowne" src="images/logo.png" alt="logo" width="128"
+      /></a>
+
+      <div id="menu">
+        <a href="climbing-frame.html"> Rama wspinaczkowa</a>
+        <a href="cennik.html">Cennik</a>
+      </div>
+      <div class="textMainPage">
+        Place zabaw to specjalnie zaprojektowane przestrzenie, które mają na
+        celu zapewnienie dzieciom rozrywki, ruchu oraz rozwijanie umiejętności
+        społecznych i motorycznych. Zwykle składają się z różnego rodzaju
+        urządzeń, takich jak huśtawki, zjeżdżalnie, drabinki, karuzele czy
+        trampoliny. Plac zabaw może być miejscem zabawy dla dzieci w różnym
+        wieku i może być zarówno miejscem zabawy dla dzieci z okolicy, jak i dla
+        dzieci w ramach organizowanych zajęć szkolnych czy przedszkolnych.
+        Dzięki placom zabaw dzieci mają możliwość spędzenia czasu na świeżym
+        powietrzu, co jest szczególnie ważne w dzisiejszych czasach, gdy coraz
+        więcej dzieci spędza czas przed ekranem komputera czy telewizora. Plac
+        zabaw to również miejsce, w którym dzieci uczą się współpracy, dzielenia
+        się zabawkami i czekania na swoją kolej. Dzieci uczą się także
+        przezwyciężać swoje lęki i ryzykować na różnych urządzeniach, co z kolei
+        wpływa na ich rozwój emocjonalny i umiejętności motoryczne. Plac zabaw
+        jest więc nie tylko miejscem zabawy, ale także miejscem nauki i rozwoju.
+        Ważne jest, aby były one bezpieczne i dobrze wyposażone, aby dzieci
+        mogły bawić się w pełni swobodnie i bezpiecznie.
+      </div>
+      <div id="conteiner">
+        <div id="card">
+          <div class="face front">Front</div>
+          <div class="face back">Back</div>
+        </div>
+      </div>
+      <button id="stopResumeAnimation">On/Off</button>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <form action="send_mail.php" method="post">
+        <fieldset>
+          <legend>Zadaj pytanie:</legend>
+          E-mail:<input type="email" name="email" id="email" required /><br />
+          Imię:<input type="text" name="imie" required /><br />
+          Temat:<input type="text" name="temat" required /><br />
+          <input type="date" name="" id="" min="2020-01-20" /><input
+            type="time"
+            name=""
+            id=""
+          />
+          <br />
+          Treść:<br />
+          <textarea
+            name="tresc"
+            id="email"
+            cols="100"
+            rows="10"
+            required
+          ></textarea>
+          <br />
+          <input class="sendButton" type="submit" value="Wyślij" />
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>

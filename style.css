@@ -1,0 +1,271 @@
+body {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(116, 192, 206);
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  background: linear-gradient(teal, rgb(49, 160, 160));
+}
+main {
+  background-color: rgba(127, 255, 212, 0.245);
+  width: 90%;
+  height: 100%;
+  margin: 10% auto auto auto;
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px solid rgb(53, 186, 186);
+  position: relative;
+}
+#logoGlowne {
+  background-color: rgb(0, 106, 255);
+}
+.definition {
+  font-weight: 600;
+  font-size: larger;
+}
+p {
+  text-align: center;
+}
+fieldset {
+  border-radius: 40px;
+}
+table {
+  border: 1px solid black;
+  margin: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  border-collapse: collapse;
+}
+table td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+caption,
+table th {
+  padding: 5px;
+  font-size: 1.2em;
+}
+#menu a:link,
+#menu a:visited {
+  text-decoration: none;
+  color: black;
+  border: 1px solid cornflowerblue;
+  background-color: white;
+  padding: 10px;
+  display: inline-block;
+  width: 200px;
+}
+
+#menu a:hover,
+#menu a:active {
+  background-color: cornflowerblue;
+  color: white;
+  transition: 0.5s;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li::before {
+  content: "\2714\00A0";
+  color: blue;
+}
+a img {
+  opacity: 0.85;
+}
+a img:hover {
+  opacity: 0.5;
+}
+
+[dataTitle] {
+  cursor: help;
+}
+
+[dataTitle]:hover::after {
+  content: attr(dataTitle);
+  background-color: rgba(127, 255, 212, 0.249);
+  padding: 15px;
+  position: absolute;
+}
+.opisProduktu {
+  text-align: justify;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  text-indent: 50px;
+  line-height: 1.4em;
+  word-spacing: 0.01em;
+  font-family: "Courier New";
+  font-weight: 700;
+  font-style: italic;
+  /* font-variant: small-caps; */
+  /* letter-spacing: 0.1em; */
+  /* text-decoration: underline dotted orange; */
+}
+.opisProduktu::first-letter {
+  font-weight: 1000;
+}
+aside {
+  background-color: aqua;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+}
+div#galeria {
+  border: 1px solid black;
+}
+/* div#galeria.a {
+  width: 100px;
+  height: 100px;
+  border: 10px;
+} */
+
+.sendButton {
+  transition: 1s;
+}
+
+.sendButton:hover {
+  cursor: pointer;
+  color: aqua;
+  opacity: 0.6;
+  transition: 1s;
+}
+.textMainPage {
+  background-color: aquamarine;
+  margin: 5px;
+  animation-name: xtext;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+
+#conteiner {
+  height: 400px;
+  width: 400px;
+  margin: 40px;
+  position: relative;
+  perspective: 1000px;
+  border: 1px solid black;
+}
+
+#card {
+  transform-style: preserve-3d;
+  transition: 1s;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-origin: 100% 50%;
+}
+
+.face {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 80px;
+  line-height: 400px;
+  text-align: center;
+}
+.front {
+  background-color: blue;
+  z-index: 10;
+}
+.back {
+  background-color: rgb(0, 238, 255);
+  transform: rotateY(180deg);
+}
+
+#card:hover {
+  transform: translate(-100%) rotateY(180deg);
+}
+
+/* DICE */
+
+#diceConteiner {
+  border: 2px solid violet;
+  position: relative;
+  perspective: 1000px;
+  width: 500px;
+  height: 500px;
+  margin: 10% 25%;
+}
+
+#dice {
+  transform-style: preserve-3d;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: rollingDice 7s infinite alternate;
+}
+
+.wall {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 200px;
+  color: black;
+  line-height: 500px;
+  text-align: center;
+}
+
+div.frontSide {
+  background-color: red;
+  transform: translateZ(100px);
+}
+
+div.backSide {
+  background-color: aqua;
+  transform: translateZ(-400px);
+}
+
+div.rightSide {
+  background-color: blueviolet;
+  transform: rotateY(90deg) translateX(150px) translateZ(250px);
+}
+
+div.leftSide {
+  background-color: coral;
+  transform: rotateY(90deg) translateX(150px) translateZ(-250px);
+}
+
+div.topSide {
+  background-color: hotpink;
+  transform: rotateX(90deg) translateZ(250px) translateY(-150px);
+}
+
+div.botSide {
+  background-color: bisque;
+  transform: rotateX(90deg) translateZ(-250px) translateY(-150px);
+}
+@keyframes rollingDice {
+  from {
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+/* DICE */
+#test {
+  border: 2px dashed red;
+  padding: 25px;
+  width: 300px;
+  height: 100px;
+  margin: 20px;
+  background: no-repeat url(../images/logo.png);
+  background-size: contain;
+  background-origin: border-box;
+  background-clip: content-box;
+}
+
+#test2 {
+  margin: 20px;
+  padding: 20px;
+  column-count: 2;
+  column-gap: 100px;
+  column-rule: 2px dashed black;
+  background-color: blueviolet;
+}
